@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=, initial-scale=1.0">
+		<link rel="stylesheet" href="project2.css" />
+		<title>petcare.com</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="project2.js"></script>
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				<div class="container">
+					<div class="logo">
+						<img class="logoimg" src="images/title.jpg" alt="logo">
+					</div>
+					<nav style="z-index: 2;" class="navclass">
+						<ul class="ull">
+							<li><a href="#">Buying</a></li>
+							<li><a href="#">Adoption</a></li>
+							<li><a href="#">Training</a></li>
+							<li class="nav1" style="text-align: center; z-index: 1;">
+								<a href="#">Diet</a>
+								<ul class="nav2"
+									style="z-index: 3;text-align: center; margin-left: -50px; display: none;">
+									<li><a href="./pet1.html" style="font-size: 12px;">Food & Lifestages</a></li>
+									<li><a href="./pet2.html" style="font-size: 12px;">Nutrition</a></li>
+									<li><a href="./pet3.html" style="font-size: 12px;">Food brands</a></li>
+								</ul>
+							</li>
+							<li><a href="#">about us</a></li>
+						</ul>
+					</nav>
+					<div class="form">
+						<form class="form1">
+							<input type="text" placeholder="SEARCH">
+							<button type="submit">Search</button>
+						</form>
+					</div>
+				</div>
+			</header>
+		</div>
+<!-- my parts -->
+<div style="margin-left: 50px;margin-top: 50px;margin-bottom: 20px;">
+	<h2 style="font-size: 35px;">Daily Energy</h2>
+<select id="test"   onchange="func()" >
+	<option value="all">all</option>
+    <option value="Water">Water</option>
+    <option value="Carbohydrates">Carbohydrates</option>
+    <option value="Protein">Protein</option>
+    <option value="Fat">Fat</option>
+	<option value="Minerals">Minerals</option>
+	<option value="Vitamins">Vitamins</option>
+</select>
+</div>
+        <table class="all"  >
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Definition</th>
+                    <th>Introduction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Water</td>
+                    <td>Water is essential to life and is the largest component of the body, accounting for between forty and eighty percent of body mass. </td>
+                    <td>clean, fresh water should be available to your pet at all times. Pets fed canned or homemade diets will voluntarily drink less water than when fed a dry diet.</td>
+                <tr>
+                <tr>
+                    <td>Carbohydrates</td>
+                    <td>Consumption of carbohydrates is not actually essential to life but very helpful in providing non-fat calories in this time when 60% of pets are overweight or obese. Carbohydrates are a very broad group of nutrients broken down into three large sub-categories: readily digested simple sugars (glucose), delayed digested complex sugars (starch) and indigestible more complex forms better known as fiber.</td>
+                    <td>Carbohydrates (sugar and starch) may be burned for energy or incorporated into body tissues. If consumed in excess, carbohydrates will be converted and stored as body fat.</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>Proteins are large, complex compounds composed of hundreds to thousands of smaller units called amino acids.</td>
+                    <td>There are twelve essential amino acids required by dogs whereas cats require thirteen dietary amino acids. Since pets have requirements for specific amino acids, the crude protein number on the pet food label is of little value because essential amino acid concentrations are more important.</td>
+                </tr>
+                <tr>
+                    <td>Fat</td>
+                    <td>Also known as lipids, fats are large complex compounds composed of hundreds to thousands of smaller units called fatty acids.</td>
+                    <td>Across most mammalian species, there are said to be three commonly essential omega 6 fatty acids: linoleic, gamma-linolenic, and arachidonic. The cat requires only two fatty acids (linoleic and arachidonic), and the dog has one essential fatty acid (linoleic). Omega 3 fatty acids are not yet recognized as essential fatty acids in dogs or cats.</td>
+                </tr>
+                <tr>
+                    <td>Minerals</td>
+                    <td>Minerals are inorganic components of the diet, commonly reported collectively on pet food labels as ash. Animals do not have an ash requirement but do have dietary requirements for individual minerals.</td>
+                    <td>Macrominerals are calcium, phosphorus, sodium, chloride, magnesium, and potassium. These are called “macro” because they are required in relatively large quantities (grams per day) compared to other minerals.
+                        Microminerals are iron, copper, iodine, zinc, manganese, and selenium. These are called “micro” because they are required in relatively small quantities (micrograms or less per day).
+                        There are minerals called “ultra-trace” such as chromium and boron; however, the minimum required by dogs or cats has not been determined. Based on the evidence in other species, chromium and boron should probably be included in their diet.</td>
+                </tr>
+                <tr>
+                    <td>Vitamins</td>
+                    <td>Vitamins are a very diverse group of nutrients divided into two types</td>
+                    <td>Fat soluble: Vitamins A, D, E and K. These vitamins are essential to a healthy life, are required in small quantities (micrograms or less) per day, and the excess is stored in the liver and body fat.
+                        Water soluble: thiamin (B1), riboflavin (B2), niacin (B3), pyridoxine (B6), pantothenic acid, folic acid, biotin, cobalamin (B12), choline, and carnitine. These vitamins are essential to a healthy life and are required in small quantities (micrograms or less) per day as well.</td>
+                </tr>
+            </tbody>
+        </table>
+			<div class="box1" style="display: none;">
+				<div class="wzleft">
+					<p>
+						Water is essential to life and is the largest component of the body, accounting for between forty and eighty percent of body mass.
+					</p></br>
+					<p>
+						clean, fresh water should be available to your pet at all times. Pets fed canned or homemade diets will voluntarily drink less water than when fed a dry diet.
+					</p>
+				</div>
+				<div class="imgright">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa2b35430555bbf014d5e2b916c9b564526a71215a788-8y9xFC_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672754150&t=96b2bf085ce032c44a276eedc47e7a89" alt="">
+				</div>
+			</div>
+			<div class="box1s" style="display: none;">
+				<div class="wzlefts">
+					<p>
+						Water is essential to life and is the largest component of the body, accounting for between forty and eighty percent of body mass.
+					</p></br>
+					<p>
+						clean, fresh water should be available to your pet at all times. Pets fed canned or homemade diets will voluntarily drink less water than when fed a dry diet.
+					</p>
+				</div>
+				<div class="imgrights">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa2b35430555bbf014d5e2b916c9b564526a71215a788-8y9xFC_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672754150&t=96b2bf085ce032c44a276eedc47e7a89" alt="">
+				</div>
+				
+			
+			</div>
+			<div class="box2" style="display: none;">
+				<div class="wzleft">
+					<p>
+						Consumption of carbohydrates is not actually essential to life but very helpful in providing non-fat calories in this time when 60% of pets are overweight or obese. Carbohydrates are a very broad group of nutrients broken down into three large sub-categories: readily digested simple sugars (glucose), delayed digested complex sugars (starch) and indigestible more complex forms better known as fiber.
+					</p></br>
+					<p>
+						Carbohydrates (sugar and starch) may be burned for energy or incorporated into body tissues. If consumed in excess, carbohydrates will be converted and stored as body fat.
+					</p>
+				</div>
+				<div class="imgright">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Ftxt207.book118.com%2F2017%2F0130%2Fbook87546%2F87545044.jpg&refer=http%3A%2F%2Ftxt207.book118.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755624&t=281447496faf9916a7efe3ff3d2b40b8" alt="">
+				</div>
+			</div>
+			<div class="box2s" style="display: none;">
+				<div class="wzlefts">
+					<p>
+						Consumption of carbohydrates is not actually essential to life but very helpful in providing non-fat calories in this time when 60% of pets are overweight or obese. Carbohydrates are a very broad group of nutrients broken down into three large sub-categories: readily digested simple sugars (glucose), delayed digested complex sugars (starch) and indigestible more complex forms better known as fiber.
+					</p></br>
+					<p>
+						Carbohydrates (sugar and starch) may be burned for energy or incorporated into body tissues. If consumed in excess, carbohydrates will be converted and stored as body fat.
+					</p>
+				</div>
+				<div class="imgrights">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Ftxt207.book118.com%2F2017%2F0130%2Fbook87546%2F87545044.jpg&refer=http%3A%2F%2Ftxt207.book118.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755624&t=281447496faf9916a7efe3ff3d2b40b8" alt="">
+				</div>
+			</div>
+			<div class="box3" style="display: none;">
+				<div class="wzleft">
+					<p>
+					Proteins are large, complex compounds composed of hundreds to thousands of smaller units called amino acids.
+					</p></br>
+					<p>
+						There are twelve essential amino acids required by dogs whereas cats require thirteen dietary amino acids. Since pets have requirements for specific amino acids, the crude protein number on the pet food label is of little value because essential amino acid concentrations are more important.
+					</p>
+				</div>
+				<div class="imgright">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F1ad5ad6eddc451da6339d426bffd5266d1163234&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755674&t=f0f20937616e5aeed52bb135c1350e76" alt="">
+				</div>
+			</div>
+			<div class="box3s" style="display: none;">
+				<div class="wzlefts">
+					<p>
+					Proteins are large, complex compounds composed of hundreds to thousands of smaller units called amino acids.
+					</p></br>
+					<p>
+						There are twelve essential amino acids required by dogs whereas cats require thirteen dietary amino acids. Since pets have requirements for specific amino acids, the crude protein number on the pet food label is of little value because essential amino acid concentrations are more important.
+					</p>
+				</div>
+				<div class="imgrights">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbkimg.cdn.bcebos.com%2Fpic%2F1ad5ad6eddc451da6339d426bffd5266d1163234&refer=http%3A%2F%2Fbkimg.cdn.bcebos.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755674&t=f0f20937616e5aeed52bb135c1350e76" alt="">
+				</div>
+			</div>
+			<div class="box4" style="display: none;">
+				<div class="wzleft">
+					<p>
+						Also known as lipids, fats are large complex compounds composed of hundreds to thousands of smaller units called fatty acids.
+					</p></br>
+					<p>
+						Across most mammalian species, there are said to be three commonly essential omega 6 fatty acids: linoleic, gamma-linolenic, and arachidonic. The cat requires only two fatty acids (linoleic and arachidonic), and the dog has one essential fatty acid (linoleic). Omega 3 fatty acids are not yet recognized as essential fatty acids in dogs or cats.
+					</p>
+				</div>
+				<div class="imgright">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.book118.com%2Fsr1%2FM00%2F2D%2F2E%2FwKh2AlwT15GIAD5IAAIwPyPUqtsAASh-AE5qK4AAjBX461.jpg&refer=http%3A%2F%2Fimg.book118.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755705&t=87921f3f6bfd4760a1feae0d18817c75" alt="">
+				</div>
+			</div>
+			<div class="box4s" style="display: none;">
+				<div class="wzlefts">
+					<p>
+						Also known as lipids, fats are large complex compounds composed of hundreds to thousands of smaller units called fatty acids.
+					</p></br>
+					<p>
+						Across most mammalian species, there are said to be three commonly essential omega 6 fatty acids: linoleic, gamma-linolenic, and arachidonic. The cat requires only two fatty acids (linoleic and arachidonic), and the dog has one essential fatty acid (linoleic). Omega 3 fatty acids are not yet recognized as essential fatty acids in dogs or cats.
+					</p>
+				</div>
+				<div class="imgrights">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.book118.com%2Fsr1%2FM00%2F2D%2F2E%2FwKh2AlwT15GIAD5IAAIwPyPUqtsAASh-AE5qK4AAjBX461.jpg&refer=http%3A%2F%2Fimg.book118.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755705&t=87921f3f6bfd4760a1feae0d18817c75" alt="">
+				</div>
+			</div>
+			<div class="box5" style="display: none;">
+				<div class="wzleft">
+					<p>
+						Minerals are inorganic components of the diet, commonly reported collectively on pet food labels as ash. Animals do not have an ash requirement but do have dietary requirements for individual minerals.
+					</p></br>
+					<p>
+						Macrominerals are calcium, phosphorus, sodium, chloride, magnesium, and potassium. These are called “macro” because they are required in relatively large quantities (grams per day) compared to other minerals. Microminerals are iron, copper, iodine, zinc, manganese, and selenium. These are called “micro” because they are required in relatively small quantities (micrograms or less per day). There are minerals called “ultra-trace” such as chromium and boron; however, the minimum required by dogs or cats has not been determined. Based on the evidence in other species, chromium and boron should probably be included in their diet.
+					</p>
+				</div>
+				<div class="imgright">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fassets.catawiki.nl%2Fassets%2F2016%2F7%2F5%2F7%2F3%2Fd%2F73d4ce80-42de-11e6-8e98-929bb8d7f868.jpg&refer=http%3A%2F%2Fassets.catawiki.nl&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755732&t=b658ac632e6a83b8533ab5cea87ac4e8" alt="">
+				</div>
+			</div>
+			<div class="box5s" style="display: none;">
+				<div class="wzlefts">
+					<p>
+						Minerals are inorganic components of the diet, commonly reported collectively on pet food labels as ash. Animals do not have an ash requirement but do have dietary requirements for individual minerals.
+					</p></br>
+					<p>
+						Macrominerals are calcium, phosphorus, sodium, chloride, magnesium, and potassium. These are called “macro” because they are required in relatively large quantities (grams per day) compared to other minerals. Microminerals are iron, copper, iodine, zinc, manganese, and selenium. These are called “micro” because they are required in relatively small quantities (micrograms or less per day). There are minerals called “ultra-trace” such as chromium and boron; however, the minimum required by dogs or cats has not been determined. Based on the evidence in other species, chromium and boron should probably be included in their diet.
+					</p>
+				</div>
+				<div class="imgrights">
+					<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fassets.catawiki.nl%2Fassets%2F2016%2F7%2F5%2F7%2F3%2Fd%2F73d4ce80-42de-11e6-8e98-929bb8d7f868.jpg&refer=http%3A%2F%2Fassets.catawiki.nl&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672755732&t=b658ac632e6a83b8533ab5cea87ac4e8" alt="">
+				</div>
+			</div>
+			<div class="box6" style="display: none;">
+				<div class="wzleft">
+					<p>
+					Vitamins are a very diverse group of nutrients divided into two types
+					</p></br>
+					<p>
+						Fat soluble: Vitamins A, D, E and K. These vitamins are essential to a healthy life, are required in small quantities (micrograms or less) per day, and the excess is stored in the liver and body fat. Water soluble: thiamin (B1), riboflavin (B2), niacin (B3), pyridoxine (B6), pantothenic acid, folic acid, biotin, cobalamin (B12), choline, and carnitine. These vitamins are essential to a healthy life and are required in small quantities (micrograms or less) per day as well.
+					</p>
+				</div>
+				<div class="imgright">
+					<img src="https://img1.baidu.com/it/u=3878265527,3588317899&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=280" alt="">
+				</div>
+			</div>
+			<div class="box6s" style="display: none;">
+				<div class="wzlefts">
+					<p>
+					Vitamins are a very diverse group of nutrients divided into two types
+					</p></br>
+					<p>
+						Fat soluble: Vitamins A, D, E and K. These vitamins are essential to a healthy life, are required in small quantities (micrograms or less) per day, and the excess is stored in the liver and body fat. Water soluble: thiamin (B1), riboflavin (B2), niacin (B3), pyridoxine (B6), pantothenic acid, folic acid, biotin, cobalamin (B12), choline, and carnitine. These vitamins are essential to a healthy life and are required in small quantities (micrograms or less) per day as well.
+					</p>
+				</div>
+				<div class="imgrights">
+					<img src="https://img1.baidu.com/it/u=3878265527,3588317899&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=280" alt="">
+				</div>
+			</div>
+	</body>
+	<footer>
+		<div class="footer">
+			<div class="flex-contain">
+				<div class="col">
+					<h1>Company</h1>
+					<ul>
+						<li>About</li>
+
+						<li>Services</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h1>Resources</h1>
+					<ul>
+						<li>Email</li>
+						<li>Contact Numbers</li>
+						<li>Maps</li>
+						<li>Site Address</li>
+					</ul>
+				</div>
+				<div class="col">
+					<h1>Support</h1>
+					<ul>
+						<li>Contact us</li>
+						<li>Book appointment</li>
+					</ul>
+				</div>
+				<div class="col social">
+					<h1>Social</h1>
+					<ul>
+						<li><img src="images/facebook.png" width="32" style="width: 32px;"></li>
+						<li><img src="images/ins.png" width="32" style="width: 32px;"></li>
+						<li><img src="images/twitter.png" width="32" height="32" style="width: 32px;"></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</footer>
+</html>

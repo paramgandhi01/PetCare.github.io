@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care</title>
+    <link rel="stylesheet" href="param.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    >
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar and search bar -->
+    <div class="container">
+      <div class="logo">
+        <img src="./imagesparam/finalogo.jpg" alt="logo" >
+      </div>
+      <nav>
+        <ul>
+          <li><a href="harsh_feature1.html">buying</a></li>
+          <li><a href="param.html">adoption</a></li>
+          <li><a href="VishalProject1.html">training</a></li>
+          <li><a href="pet1.html">diet</a></li>
+          <li><a href="Harshitha.html">about us</a></li>
+          <li><a href="harsh_feature3.html">log In</a></li>
+        </ul>
+      </nav>
+      <div class="form">
+        <form>
+          <input type="text" placeholder="SEARCH">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <!-- finding pets using postal code -->
+    <main id="automatic">
+      <div class="postal">
+        <h1>Look out for adopting pets today!</h1>
+        <p class="postalp">
+          There are hundreds of pets roaming around the street day and night in 
+          bleak weather and some of them <br>
+          do not even see the light of the day. Different NGO'S and rescue
+          operations have been able to save some <br>
+          of them and are put for adoption so that they can also live peacefully
+          and find a roof over <br>
+          their head. Find the nearest shelter house/NGO according to your postal
+          code.
+        </p>
+        <div class="postalcode">
+          <input type="text" placeholder="ENTER YOUR POSTAL CODE HERE...">
+          <button>Search</button>
+        </div>
+      </div>
+    </main>
+    <!-- tabular data -->
+    <article>
+      <h2>Data of NGO'S saving pets over the years</h2>
+      <div class="petstable">
+        <div class="table1" data-aos="fade-right" data-aos-duration="1000">
+          <p>
+            Since almost a decade, we are trying to make efforts to save <br> as many pets as we can,
+            but we were unable to do so because <br> of lack of remuneration Finally, when we started getting
+            funds <br> from people who believed in our cause we were in full <br> force and here are some data showcasing that.
+          </p>
+        </div>
+        <div class="table2" data-aos="fade-left" data-aos-duration="1000">
+          <table>
+            <thead>
+            <tr>
+              <th id="hdr_year">Years</th>
+              <th id="hdr_number">Numbers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers="hdr_year">2019</td>
+              <td headers="hdr_number">5,000</td>
+            </tr>
+            <tr>
+              <td headers="hdr_year">2020</td>
+              <td headers="hdr_number">7,000</td>
+            </tr>
+            <tr>
+              <td headers="hdr_year">2021</td>
+              <td headers="hdr_number">9,000</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>  
+    </div>
+    </article>
+    <!-- photos of pets for adoption -->
+    <div class="photos">
+        <h1>
+          Below are some of the images of the pets waiting for you to adopt them
+        </h1>
+        <div class="photoflex">
+          <div id="dog1">
+            <img src="./imagesparam/dog1.jpg" id="slideshow" alt="dog1" >
+          </div>
+        </div>
+        <div id="slidewithcontrols">
+            <button id="pre" onclick="changeImage(-1)">Previous</button>
+            <button id="nex" onclick="changeImage(1)">Next</button>
+        </div>
+    </div>
+    <!-- fun quiz -->
+    <div class="funquiz">
+      <h1 id="quizheader">Fun Quiz for pet lovers</h1>
+      <div class="quiz-container" id="quiz" data-aos="fade-up" data-aos-duration="2000">
+        <div class="quiz-header">
+          <h2 id="question">Question Text</h2>
+          <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Answer</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+  </div>
+  <!-- faq -->
+  <div id="faqpets">
+    <div id="faqs">
+      <h1>Important information everyone here should know</h1>
+      <h2><a href="#">Pet return policy</a></h2>
+      <div>
+        <p>
+          Normally, when people adopt pets they usually get together really well and do not seem to have any problem. <br> Although, having said that a meagre amount of people sometimes find them in a situation <br> where the pet they adopted is not a good match for them, in that case <br> one can give them back to shelter using the number below.
+        </p>
+      </div>
+      <h2><a href="#">Some imperative information</a></h2>
+      <div>
+        <p id="aa">If one is bringing a new pet in their house, they need to take care of certain things as listed below</p>
+        <ul>
+          <li>One needs to be ready with all necessary things such as leash, brush, harnesh, pet carpet etc.</li>
+          <li>All harmful chemicals such as phenyl, insecticides, other cleaning chemicals.</li>
+          <li>Other important things you deem necessary.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <!-- foster -->
+    <div class="foster">
+      <h2 id="fosterh2">Foster Families</h2>
+      <p id="foster_p">There is a foster program we run where pets are being fostered by <br> a family for a duration of 3 months and till then they can decide whether <br> they want to adopt the pet or not. Below are some images of the pets to foster/adopt</p>
+      <div class="foster_img">
+        <div class="img1">
+          <img src="./imagesparam/clarkent.jpg" alt="superman">
+          <p><strong>Clark Kent</strong></p>
+        </div>
+        <div class="img2">
+          <img src="./imagesparam/delilah.jpg" alt="delilah">
+          <p><strong>Delilah</strong></p>
+        </div>
+        <div class="img3">
+          <img src="./imagesparam/odwilz.jpg" alt="odwilz">
+          <p><strong>Odwilz</strong></p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer>     
+      <div class="footer">
+          <div class="flex-contain">
+              <div class="col">
+              <h1>Company</h1>
+              <ul>
+                  <li>About</li>
+                  <li>Services</li>    
+              </ul>
+              </div>
+              <div class="col">
+              <h1>Resources</h1>
+              <ul>
+                  <li>Email</li>
+                  <li>Contact Numbers</li>
+                  <li>Maps</li>
+                  <li>Site Address</li>    
+              </ul>
+              </div>
+              <div class="col">
+              <h1>Support</h1>
+              <ul>
+                  <li>Contact us</li>   
+                  <li>Book appointment</li>
+              </ul>
+              </div>
+              <div class="col social">
+              <h1>Social</h1>
+              <ul>
+                  <li><img src="./imagesparam/facebook.jpeg" width="32" style="width: 32px;"></li>
+                  <li><img src="./imagesparam/instagram.jpeg" width="32" style="width: 32px;"></li>
+                  <li><img src="./imagesparam/twitter.jpeg" width="32" height="32" style="width: 32px;"></li>
+              </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+      </div>
+  </footer>
+  <script src="param.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+</html>
